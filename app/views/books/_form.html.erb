@@ -25,7 +25,7 @@
 
     <div>
       <%= form.label :author_id, style: "display: block" %>
-      <%= form.text_field :author_id %>
+      <%= form.select :author_id, Author.all.map { |u| [u.name, u.id] } %>
     </div>
 
     <div>
