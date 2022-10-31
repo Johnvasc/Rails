@@ -1,0 +1,47 @@
+body{
+  background-color: #f7cac9;
+}
+.mainBookForm{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  background-color: #034f84;
+  color: white;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 36px;
+  box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+.boxHorizontal{
+  display: grid;
+  grid-template-columns: 30% 15% 25% 15% 15%;
+  background-color: #034f84;
+  color: white;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 36px;
+  box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.6);
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bookFormButtonDiv{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

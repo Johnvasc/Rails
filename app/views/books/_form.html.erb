@@ -1,0 +1,50 @@
+<%= form_with(model: book) do |form| %>
+  <% if book.errors.any? %>
+    <div style="font-size:12px">
+      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+        <% book.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="mainBookForm">
+  <div class="box">
+    <div>
+      <%= form.label :title, style: "display: block" %>
+      <%= form.text_field :title %>
+    </div>
+
+    <div>
+      <%= form.label :numPages, style: "display: block" %>
+      <%= form.text_field :numPages %>
+    </div>
+
+    <div>
+      <%= form.label :author_id, style: "display: block" %>
+      <%= form.text_field :author_id %>
+    </div>
+
+    <div>
+      <%= form.label :genre, style: "display: block" %>
+      <%= form.text_field :genre %>
+    </div>
+
+    <div class = "bookFormButtonDiv">
+      <%= button_tag(type: 'submit', class:"btn btn-dark") do %>
+      Cadastrar Livro
+      <% end %>
+    </div>
+    <div>
+      <%= link_to "Voltar", books_path %>
+    </div>
+  </div>
+
+</div>
+
+
+
+<% end %>

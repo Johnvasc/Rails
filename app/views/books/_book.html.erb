@@ -1,0 +1,24 @@
+<div id="<%= dom_id book %>" class="boxHorizontal" style='margin-bottom: 1rem;'>
+  <p>
+    <strong>Title:</strong>
+    <%= book.title %>
+  </p>
+
+  <p>
+    <strong>Numpages:</strong>
+    <%= book.numPages %>
+  </p>
+
+  <p>
+    <strong>Author:</strong>
+    <%= book.author_id %>
+  </p>
+
+  <p>
+    <strong>Genre:</strong>
+    <%= book.genre %>
+  </p>
+  <p>
+    <%= link_to "Show this book", book %>
+  </p>
+</div>
